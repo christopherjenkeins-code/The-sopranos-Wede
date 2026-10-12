@@ -6,28 +6,37 @@
     <title>The Sopranos | Restaurant & Lounge</title>
     <!-- CSS Link -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 
     <!-- Header & Navigation -->
-   <header>
-    <nav class="navbar">
-        <ul>
-            <!-- ADD IT HERE INSIDE YOUR NAV LIST -->
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
+    <header class="site-header">
+        <a href="index.html" class="logo">THE SOPRANOS</a>
+
+        <!-- Mobile menu toggle (pure CSS, no JavaScript needed) -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span></label>
+
+        <nav class="navbar" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <!-- Main Content -->
     <main>
         <!-- Hero Banner -->
         <section class="hero">
             <h2>Dining. Drinks. The vibe of the night.</h2>
-            <p>Welcome to northern Roodepoort's premier restaurant & lounge.</p>
+            <p>Welcome to northern Roodepoort's premier restaurant &amp; lounge.</p>
+            <p id="open-status" class="open-badge" aria-live="polite"></p>
             <a href="enquiry.html" class="btn">Reserve a table</a>
         </section>
 
@@ -35,8 +44,8 @@
         <section class="previews">
             <div class="card">
                 <h3>FEATURED SPECIAL</h3>
-                <p><strong>This Week's Signature Cocktail & Event:</strong> Join us this Friday for Live DJ Sets alongside our exclusive Neon Crimson Cocktail deals!</p>
-                <a href="services.html" class="card-link">View Full Menu &rarr;</a>
+                <p><strong>This Week's Signature Cocktail &amp; Event:</strong> Join us this Friday for Live DJ Sets alongside our exclusive Neon Crimson Cocktail deals!</p>
+                <a href="menu.html" class="card-link">View Full Menu &rarr;</a>
             </div>
 
             <div class="card">
@@ -50,13 +59,12 @@
     <!-- Footer with Developer Credit -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2026 The Sopranos Restaurant & Lounge. All Rights Reserved.</p>
+            <p>&copy; <span id="year">2026</span> The Sopranos Restaurant &amp; Lounge. All Rights Reserved.</p>
             <p class="developer-credit">
-                Website Designed & Developed by <strong>Lumkikhaya Nonyongo ST10512732@rcconnect.edu.za</strong>
+                Website Designed &amp; Developed by <strong>Lumkikhaya Luzuko Nonyongo</strong>
             </p>
-            
             <div class="developer-profile">
-                <img src="images/developer.jpg.jpeg" alt="Lumkikhaya Luzuko Nonyongo" class="dev-img"> 
+                <img src="images/developer.jpg.jpeg" alt="Lumkikhaya Luzuko Nonyongo" class="dev-img">
             </div>
         </div>
     </footer>
