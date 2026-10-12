@@ -6,18 +6,23 @@
     <title>About Us | The Sopranos</title>
     <!-- CSS Link -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 
     <!-- Header & Navigation -->
-    <header>
-        <div class="logo">
-            <h1>THE SOPRANOS</h1>
-        </div>
-        <nav class="navbar">
+    <header class="site-header">
+        <a href="index.html" class="logo">THE SOPRANOS</a>
+
+        <!-- Mobile menu toggle (pure CSS, no JavaScript needed) -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span></label>
+
+        <nav class="navbar" aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html" class="active" aria-current="page">About Us</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -38,14 +43,14 @@
             <div class="about-card">
                 <h3>Who We Are</h3>
                 <p>
-                    Established as the entertainment hub of northern ROODEPOORT in 2024, <strong>The Sopranos Restaurant & Lounge</strong> blends high-end cuisine with an energetic nightlife atmosphere. Whether you're dropping in for a quiet dinner or celebrating through the night with friends, our goal is to deliver excellence in every dish and drink. Renowned as northern Roodepoort's premier fine dining destination, The Sopranos Restaurant & Lounge offers an exquisite fusion of refined cuisine, elegant surroundings, and impeccable service. Every dish is thoughtfully prepared using the finest ingredients, while our curated selection of wines, cocktails, and premium beverages perfectly complement the experience. Whether you're celebrating a special occasion, enjoying an intimate evening, or indulging in a memorable dining experience, The Sopranos promises exceptional flavour, timeless elegance, and hospitality of the highest standard.
+                    Established as the entertainment hub of northern ROODEPOORT in 2024, <strong>The Sopranos Restaurant &amp; Lounge</strong> blends high-end cuisine with an energetic nightlife atmosphere. Whether you're dropping in for a quiet dinner or celebrating through the night with friends, our goal is to deliver excellence in every dish and drink. Renowned as northern Roodepoort's premier fine dining destination, The Sopranos Restaurant &amp; Lounge offers an exquisite fusion of refined cuisine, elegant surroundings, and impeccable service. Every dish is thoughtfully prepared using the finest ingredients, while our curated selection of wines, cocktails, and premium beverages perfectly complement the experience. Whether you're celebrating a special occasion, enjoying an intimate evening, or indulging in a memorable dining experience, The Sopranos promises exceptional flavour, timeless elegance, and hospitality of the highest standard.
                 </p>
             </div>
 
             <div class="about-card">
                 <h3>Our Culinary Vision</h3>
                 <p>
-                    Our culinary philosophy celebrates the finest locally sourced ingredients, elevated through international inspiration and meticulous craftsmanship to create dishes of exceptional flavour and elegance. Paired with expertly crafted signature cocktails, captivating live entertainment, and a sophisticated contemporary setting, every visit to The Sopranos Restaurant & Lounge is designed to be an unforgettable experience where fine dining meets a redefined nightlife.
+                    Our culinary philosophy celebrates the finest locally sourced ingredients, elevated through international inspiration and meticulous craftsmanship to create dishes of exceptional flavour and elegance. Paired with expertly crafted signature cocktails, captivating live entertainment, and a sophisticated contemporary setting, every visit to The Sopranos Restaurant &amp; Lounge is designed to be an unforgettable experience where fine dining meets a redefined nightlife.
                 </p>
             </div>
 
@@ -53,11 +58,11 @@
                 <h3>Sitemap</h3>
                 <p>Explore the rest of our digital portal:</p>
                 <ul class="sitemap-list">
-                    <li><a href="index.html">&rarr; Homepage & Highlights</a></li>
-                    <li><a href="menu.html">&rarr; Food & Drinks Menu</a></li>
-                    <li><a href="services.html">&rarr; Lounge Services & Events</a></li>
-                    <li><a href="enquiry.html">&rarr; Table Reservations & Enquiries</a></li>
-                    <li><a href="contact.html">&rarr; Contact Info & Location Directions</a></li>
+                    <li><a href="index.html">&rarr; Homepage &amp; Highlights</a></li>
+                    <li><a href="menu.html">&rarr; Food &amp; Drinks Menu</a></li>
+                    <li><a href="services.html">&rarr; Lounge Services &amp; Events</a></li>
+                    <li><a href="enquiry.html">&rarr; Table Reservations &amp; Enquiries</a></li>
+                    <li><a href="contact.html">&rarr; Contact Info &amp; Location Directions</a></li>
                 </ul>
                 <p>A full page hierarchy and navigation map is documented in <code>SITEMAP.md</code> in the project repository.</p>
             </div>
@@ -90,15 +95,15 @@
     <!-- Footer with Developer Credit -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2026 The Sopranos Restaurant & Lounge. All Rights Reserved.</p>
+            <p>&copy; <span id="year">2026</span> The Sopranos Restaurant &amp; Lounge. All Rights Reserved.</p>
             <p class="developer-credit">
-                Website Designed & Developed by <strong>Lumkikhaya ST10512732@rcconnect.edu.za</strong>
+                Website Designed &amp; Developed by <strong>Lumkikhaya Luzuko Nonyongo</strong>
             </p>
-            
             <div class="developer-profile">
-                <img src="images/developer.jpg.jpeg" alt="Lumkikhaya Nonyongo ST10512732" class="dev-img"> 
+                <img src="images/developer.jpg.jpeg" alt="Lumkikhaya Luzuko Nonyongo" class="dev-img">
             </div>
         </div>
+
     </footer>
 
 </body>
