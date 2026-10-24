@@ -227,4 +227,42 @@
         initReservationForm();
         initContactForm();
     });
-})();
+})();// --- Global Header Search Bar Functionality ---
+document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById("searchInput");
+    const searchBtn = document.querySelector(".search-btn");
+
+    if (!searchInput) return;
+
+    function performSearch() {
+        const query = searchInput.value.toLowerCase().trim();
+        
+        if (!query) {
+            // Reset visibility if search is empty
+            document.querySelectorAll(".menu-card, .about-card, .service-card, .card").forEach(item => {
+                item.style.display = "";
+            });
+            return;
+        }
+
+        // Search through common content cards across pages
+        const searchableItems = document.querySelectorAll(".menu-card, .about-card, .service-card, .card");
+        
+        searchableItems.forEach(item => {
+            const text = item.textContent.toLowerCase();
+            if (text.includes(query)) {
+                item.style.display = ""; // Show matching items
+            } else {
+                item.style.display = "none"; // Hide non-matching items
+            }
+        });
+    }
+
+    // Trigger search on typing
+    searchInput.addEventListener("input", performSearch);
+
+    // Trigger search on clicking the search button
+    if (searchBtn) {
+        searchBtn.addEventListener("click", performSearch);
+    }
+});
