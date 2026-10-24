@@ -1,10 +1,18 @@
 # Changelog
 
-# Changelog
-
 All notable changes to The Sopranos Restaurant & Lounge website are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) principles, and entries are grouped by version and date.
+
+## [1.4.0] - 2026-10-24
+
+### Added
+- **Global header search bar**: Integrated a persistent search input and button across all six page headers (`index.html`, `about.html`, `menu.html`, `services.html`, `enquiry.html`, and `contact.html`) to improve site accessibility and navigation.
+- **Search bar styling**: Added responsive layout rules (`.search-bar-container`, `.search-input`, and `.search-btn`) with smooth transition effects for focus and hover states in `css/style.css`.
+
+### Changed
+- Cleaned up the project file structure by removing redundant duplicate stylesheet copies (`style (2).css`).
+- Updated `README.md` to include the global search feature in the project overview and feature breakdown.
 
 ## [1.3.3] - 2026-10-11
 

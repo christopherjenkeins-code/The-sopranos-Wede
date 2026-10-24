@@ -5,7 +5,7 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Status](https://img.shields.io/badge/Status-Completed-success)]()
 
-Welcome to the repository for **The Sopranos Restaurant & Lounge** web platform. This responsive multi-page website showcases the venue's dining, craft cocktails, VIP nightlife events, operating details, and a table reservation form.
+Welcome to the repository for **The Sopranos Restaurant & Lounge** web platform. This responsive multi-page website showcases the venue's dining, craft cocktails, VIP nightlife events, operating details, a table reservation form, and a global header search system.
 
 ---
 
@@ -14,6 +14,7 @@ Welcome to the repository for **The Sopranos Restaurant & Lounge** web platform.
 Located in Northern Roodepoort, Gauteng, South Africa, **The Sopranos Restaurant & Lounge** offers a premium culinary and nightlife experience.
 
 ### Key Pages & Features
+* 🔍 **Global Search Bar:** Persistent search input integrated across all page headers for quick site navigation.
 * 🏠 **Home (`index.html`):** Hero section, featured special, live "Open now / Closed" badge.
 * 📖 **About Us (`about.html`):** Background, culinary vision, design approach and references.
 * 🍽️ **Menu (`menu.html`):** Burgers, wings, cocktails and event specials with a category filter.
@@ -25,6 +26,7 @@ Located in Northern Roodepoort, Gauteng, South Africa, **The Sopranos Restaurant
 * Reservation and contact form validation with on-page confirmation messages
 * Menu category filter
 * Open now / Closed badge in South African time
+* Header search interaction functionality
 * Back-to-top button, auto-updating footer year, mobile menu auto-close
 
 ---
@@ -57,33 +59,3 @@ Located in Northern Roodepoort, Gauteng, South Africa, **The Sopranos Restaurant
                                # developer.jpg.jpeg, event&specials.jpg,
                                # gourmet dish.jpg, Signature cocktails.jpg,
                                # vipevents.jpg, wings.jpg, wings2.jpg, ...
-```
-
----
-
-## 🚀 Deployment (GitHub Pages)
-
-1. Push the project to GitHub with `index.html` in the **root** of the repository.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to *Deploy from a branch*, choose branch `main` and folder `/ (root)`, then **Save**.
-4. After a minute or two the site is live at `https://<your-username>.github.io/<repository-name>/`.
-
-> **Important:** GitHub Pages is **case-sensitive**. `images/Signature cocktails.jpg` and `images/signature cocktails.jpg` are different files. File names in the HTML must match the files in the repository exactly.
-
-### Custom domain (optional)
-
-1. Buy a domain (for example `thesopranos.co.za`) from a registrar.
-2. In **Settings → Pages → Custom domain**, enter the domain and save. GitHub creates a `CNAME` file in the repository.
-3. At the registrar's DNS settings, add these records:
-
-| Type | Name | Value |
-|---|---|---|
-| A | `@` | `185.199.108.153` |
-| A | `@` | `185.199.109.153` |
-| A | `@` | `185.199.110.153` |
-| A | `@` | `185.199.111.153` |
-| CNAME | `www` | `<your-username>.github.io` |
-
-4. Wait for DNS to update (from a few minutes up to 24 hours), then tick **Enforce HTTPS**.
-
-GitHub's current DNS values are listed at https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site, so check them there before changing your DNS.
